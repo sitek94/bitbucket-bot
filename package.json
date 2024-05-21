@@ -1,0 +1,21 @@
+{
+  "name": "bitbucket-bot",
+  "type": "module",
+  "scripts": {
+    "dev": "PORT=4000 bun --watch run ./src/index.ts",
+    "tunnel": "ssh -R maciek.serveo.net:80:localhost:4000 serveo.net"
+  },
+  "dependencies": {
+    "@langchain/openai": "^0.0.28",
+    "langchain": "^0.1.37",
+    "openai": "^4.46.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "langsmith": "^0.1.24"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
